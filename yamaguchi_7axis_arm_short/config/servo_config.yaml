@@ -1,0 +1,11 @@
+joint_name_to_servo_id: {
+  rarm_joint1_w: 0,
+  rarm_joint2_w: 2,
+  rarm_joint3_w: 4,
+  rarm_joint4_w: 6,
+  rarm_joint5_w: 8,
+  rarm_joint6: 10,
+  rarm_joint7: 12,
+  rarm_gripper_joint1: 26,
+  rarm_gripper_joint2: 26
+}

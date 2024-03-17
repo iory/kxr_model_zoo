@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'rarm_joint1-w', 'rarm_joint2-w', 'rarm_joint3-w', 'rarm_joint4-w', 'rarm_joint5-w', 'rarm_joint6', 'rarm_joint7', 'rarm_gripper_joint1', 'rarm_gripper_joint2', ]

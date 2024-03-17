@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="yamaguchi_7axis_arm_short">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0319956374114008 0.00351233885320305 -0.0077879670406265"
+        rpy="0 0 0" />
+      <mass
+        value="0.739634791802776" />
+      <inertia
+        ixx="0.000916447418057118"
+        ixy="-1.81794308663069E-05"
+        ixz="2.38707892595952E-05"
+        iyy="0.000648633942469447"
+        iyz="2.88745139616493E-05"
+        izz="0.000349445216538281" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="0.0513555889789855 -0.00032663626423593 -0.0107832092820323"
+        rpy="0 0 0" />
+      <mass
+        value="0.0695013999820667" />
+      <inertia
+        ixx="5.7873093071976E-06"
+        ixy="-1.99785906135509E-07"
+        ixz="-3.9522903015818E-09"
+        iyy="7.28441167703901E-06"
+        iyz="1.35562464480566E-08"
+        izz="6.96401146603346E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_joint1_w"
+    type="continuous">
+    <origin
+      xyz="0.0545 -0.0405 0"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link1" />
+    <axis
+      xyz="-1 0 0" />
+    <limit velocity="10.0" effort="10.0" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="0.0461336605441565 0.00295731954456292 0.0167856753059148"
+        rpy="0 0 0" />
+      <mass
+        value="0.0755465256895169" />
+      <inertia
+        ixx="8.14278773111818E-06"
+        ixy="-9.02784081859662E-09"
+        ixz="2.00544446844628E-07"
+        iyy="7.53914330706402E-06"
+        iyz="-3.95110679047937E-09"
+        izz="6.10012216628185E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_joint2_w"
+    type="continuous">
+    <origin
+      xyz="0.07550000188 0.00700000000000005 0"
+      rpy="0 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit velocity="10.0" effort="0.0" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="0.0513555889385476 -0.00732608070604873 -0.0107832092886899"
+        rpy="0 0 0" />
+      <mass
+        value="0.0695013997960429" />
+      <inertia
+        ixx="5.7873092652985E-06"
+        ixy="-1.9978591635931E-07"
+        ixz="-3.95228329806092E-09"
+        iyy="7.28441165911915E-06"
+        iyz="1.35562267632647E-08"
+        izz="6.96401143378191E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_joint3_w"
+    type="continuous">
+    <origin
+      xyz="0.0514999999999998 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="-1 0 0" />
+    <limit velocity="10.0" effort="0.0" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.0461336605441584 0.00995731954456315 0.0167856753059124"
+        rpy="0 0 0" />
+      <mass
+        value="0.0755465256895074" />
+      <inertia
+        ixx="8.14278773111822E-06"
+        ixy="-9.02784081859941E-09"
+        ixz="2.00544446844641E-07"
+        iyy="7.53914330706388E-06"
+        iyz="-3.95110679049925E-09"
+        izz="6.10012216628177E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_joint4_w"
+    type="continuous">
+    <origin
+      xyz="0.0755000018800001 -0.00699944442729632 0"
+      rpy="0 0 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit velocity="10.0" effort="0.0" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="0.0286492788698078 -0.000513604390624776 9.74047231760977E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.0111568088982933" />
+      <inertia
+        ixx="8.23106287645061E-07"
+        ixy="7.8537088071366E-09"
+        ixz="1.31339727778248E-21"
+        iyy="9.11940896532987E-07"
+        iyz="-9.71566785125036E-22"
+        izz="9.15552350082019E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_joint5_w"
+    type="continuous">
+    <origin
+      xyz="0.0514999999999998 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="-1 0 0" />
+    <limit velocity="10.0" effort="0.0" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="5.00076951270856E-06 0.0128990742775923 -0.00777810456033585"
+        rpy="0 0 0" />
+      <mass
+        value="0.0488819579417229" />
+      <inertia
+        ixx="6.30201298165013E-06"
+        ixy="4.77616974104023E-10"
+        ixz="1.80131374141001E-08"
+        iyy="6.89791246161297E-06"
+        iyz="-1.79692818783552E-08"
+        izz="5.38979193954327E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_joint6"
+    type="continuous">
+    <origin
+      xyz="0.0505000000000033 0.00250055557270537 0"
+      rpy="0 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 1 0" />
+    <limit velocity="10.0" effort="0.0" />
+  </joint>
+  <link
+    name="link7">
+    <inertial>
+      <origin
+        xyz="0.021167913450371 -7.07286790823311E-05 0.00427390160424086"
+        rpy="0 0 0" />
+      <mass
+        value="0.0268362399403124" />
+      <inertia
+        ixx="3.3927973898983E-06"
+        ixy="1.02816470069103E-09"
+        ixz="-3.03708811631651E-07"
+        iyy="3.27634396044313E-06"
+        iyz="-2.40537248392389E-08"
+        izz="2.68948179876764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_joint7"
+    type="continuous">
+    <origin
+      xyz="0.0174999999999967 -0.00250000000000153 0"
+      rpy="0 0 0" />
+    <parent
+      link="link6" />
+    <child
+      link="link7" />
+    <axis
+      xyz="1 0 0" />
+    <limit velocity="10.0" effort="0.0" />
+  </joint>
+  <link
+    name="gripper_link1">
+    <inertial>
+      <origin
+        xyz="0.0189456317242878 -2.35922392732846E-16 -0.00704460072451881"
+        rpy="0 0 0" />
+      <mass
+        value="0.00770529888597978" />
+      <inertia
+        ixx="4.13359155833754E-07"
+        ixy="8.03106045259982E-22"
+        ixz="2.9509459819509E-07"
+        iyy="1.65491277900334E-06"
+        iyz="-2.26366866121854E-23"
+        izz="1.58831726929184E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/gripper_link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/gripper_link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_gripper_joint1"
+    type="continuous">
+    <origin
+      xyz="0.0283029710109983 0 -0.0117414855054991"
+      rpy="0 0 0" />
+    <parent
+      link="link7" />
+    <child
+      link="gripper_link1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit velocity="10.0" effort="0.0" />
+  </joint>
+  <link
+    name="gripper_link2">
+    <inertial>
+      <origin
+        xyz="0.0189456317242877 -4.64905891561784E-16 0.00704460072451837"
+        rpy="0 0 0" />
+      <mass
+        value="0.00770529888597978" />
+      <inertia
+        ixx="4.13359155833744E-07"
+        ixy="-6.27490904742486E-22"
+        ixz="-2.95094598195071E-07"
+        iyy="1.65491277900334E-06"
+        iyz="-6.65490553405787E-23"
+        izz="1.58831726929185E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/gripper_link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.298039215686275 0.298039215686275 0.298039215686275 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yamaguchi_7axis_arm_short/meshes/gripper_link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rarm_gripper_joint2"
+    type="continuous">
+    <origin
+      xyz="0.0283029710109984 0 0.0117372282582488"
+      rpy="0 0 0" />
+    <parent
+      link="link7" />
+    <child
+      link="gripper_link2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit velocity="10.0" effort="0.0" />
+  </joint>
+</robot>

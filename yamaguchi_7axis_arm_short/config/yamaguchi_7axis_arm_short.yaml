@@ -1,0 +1,19 @@
+rarm:
+ - rarm_joint1_w : rarm_joint1_w
+ - rarm_joint2_w : rarm_joint2_w
+ - rarm_joint3_w : rarm_joint3_w
+ - rarm_joint4_w : rarm_joint4_w
+ - rarm_joint5_w : rarm_joint5_w
+ - rarm_joint6   : rarm_joint6
+ - rarm_joint7   : rarm_joint7
+ - rarm_gripper_joint1 : rarm_gripper_joint1
+ - rarm_gripper_joint2 : rarm_gripper_joint2
+
+angle-vector:
+  reset-pose : [0, 30, 0, 30, 0, -30, 0, 0, 0]
+
+rarm-end-coords:
+  parent : link7
+  # translate : [0.06, 0, 0]  # joint base gripper
+  translate : [0.11, 0, 0]  # 50mm extended gripper
+  rotate : [0, 0, 1, 0]
