@@ -1,0 +1,25 @@
+joint_name_to_servo_id: {
+  HEAD_JOINT0: {'id': 14, 'direction': -1, 'type': 'revolute'},
+  HEAD_JOINT1: {'id': 16, 'direction': -1, 'type': 'revolute'},
+  HEAD_JOINT2: {'id': 18, 'direction': -1, 'type': 'revolute'},
+  HEAD_JOINT3: {'id': 22, 'direction': 1, 'type': 'revolute'},
+  HEAD_JOINT4: {'id': 20, 'direction': 1, 'type': 'revolute'},
+  LARM_JOINT0: {'id': 3, 'direction': 1, 'type': 'revolute'},
+  LARM_JOINT1: {'id': 5, 'direction': 1, 'type': 'revolute'},
+  LARM_JOINT3: {'id': 25, 'direction': -1, 'type': 'revolute'},
+  LARM_JOINT4: {'id': 27, 'direction': 1, 'type': 'revolute'},
+  LARM_JOINT5: {'id': 7, 'direction': -1, 'type': 'revolute'},  # wheel
+  RARM_JOINT0: {'id': 2, 'direction': 1, 'type': 'revolute'},
+  RARM_JOINT1: {'id': 4, 'direction': -1, 'type': 'revolute'},
+  RARM_JOINT3: {'id': 24, 'direction': 1, 'type': 'revolute'},
+  RARM_JOINT4: {'id': 26, 'direction': -1, 'type': 'revolute'},
+  RARM_JOINT5: {'id': 6, 'direction': 1, 'type': 'revolute'},  # wheel
+  RLEG_JOINT0: {'id': 9, 'direction': 1, 'type': 'revolute'},
+  RLEG_JOINT1: {'id': 11, 'direction': -1, 'type': 'revolute'},
+  RLEG_JOINT2: {'id': 13, 'direction': 1, 'type': 'continuous'},  # wheel
+  LLEG_JOINT0: {'id': 8, 'direction': 1, 'type': 'revolute'},
+  LLEG_JOINT1: {'id': 10, 'direction': 1, 'type': 'revolute'},
+  LLEG_JOINT2: {'id': 12, 'direction': -1, 'type': 'continuous'},  # wheel
+  LARM_JOINT2: {'id': 0, 'direction': 1, 'type': 'continuous'},  # bend arm
+  RARM_JOINT2: {'id': 1, 'direction': 1, 'type': 'continuous'},  # bend arm
+}
