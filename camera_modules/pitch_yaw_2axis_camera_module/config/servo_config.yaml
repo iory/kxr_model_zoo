@@ -1,0 +1,4 @@
+joint_name_to_servo_id: {
+  pitch_joint: 26,
+  yaw_joint: 28,
+}

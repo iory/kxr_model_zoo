@@ -6,5 +6,9 @@
 # Python
 *.pyc
 
+# URDF exporter
+*.3dxml
+*.csv
+
 # Catkin custom files
 CATKIN_IGNORE

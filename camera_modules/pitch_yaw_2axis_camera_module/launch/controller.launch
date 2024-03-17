@@ -1,0 +1,26 @@
+<launch>
+
+  <arg name="urdf_path" default="$(find pitch_yaw_2axis_camera_module)/urdf/pitch_yaw_2axis_camera_module.urdf" />
+  <arg name="servo_config_path" default="$(find pitch_yaw_2axis_camera_module)/config/servo_config.yaml" />
+  <arg name="publish_imu" default="true" />
+  <arg name="publish_sensor" default="false" />
+  <arg name="publish_battery_voltage" default="false" />
+  <arg name="use_rcb4" default="false" doc="Flag to use RCB4 mini board"/>
+  <arg name="device" default="" doc="Device path"/>
+  <arg name="model_server_port" default="8123" />
+  <arg name="namespace" default="" />
+
+  <include file="$(find kxr_controller)/launch/kxr_controller.launch" >
+    <arg name="urdf_path" value="$(arg urdf_path)" />
+    <arg name="servo_config_path" value="$(arg servo_config_path)" />
+    <arg name="use_rcb4" value="$(arg use_rcb4)" />
+    <arg name="device" value="$(arg device)" />
+    <arg name="model_server_port" value="$(arg model_server_port)" />
+    <arg name="publish_imu" value="$(arg publish_imu)" />
+    <arg name="publish_sensor" value="$(arg publish_sensor)" />
+    <arg name="publish_battery_voltage" value="$(arg publish_battery_voltage)" />
+    <arg name="namespace" value="$(arg namespace)" />
+  </include>
+
+</launch>
+

@@ -1,0 +1,21 @@
+<package format="2">
+  <name>pitch_yaw_2axis_camera_module</name>
+  <version>1.0.0</version>
+  <description>
+    <p>pitch_yaw_2axis_camera_module</p>
+  </description>
+  <author>IORI YANOKURA</author>
+  <maintainer email="yanokura@jsk.imi.i.u-tokyo.ac.jp" />
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roslaunch</depend>
+  <depend>robot_state_publisher</depend>
+  <depend>rviz</depend>
+  <depend>joint_state_publisher_gui</depend>
+  <depend>gazebo</depend>
+  <depend>kxr_controller</depend>
+  <export>
+    <architecture_independent />
+  </export>
+</package>
